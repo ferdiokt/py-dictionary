@@ -77,7 +77,9 @@ def main_program():
         else:
             ui = check_match(ui.lower())
             print('\n' + translate_word(ui) + '\n')
-                        
+
+
+# capturing input from command line or argv                      
 if len(sys_arg) != 0:
     if (sys_input in data) or (sys_input.lower() in data):
         print('\n' + translate_word(sys_input) + '\n')
